@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  background-image: linear-gradient(-20deg, #6f45e259 0%, #88d3ce3b 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 45rem;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  height: 50rem;
+  margin: 6rem auto 0;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+}
+
+.search {
+  margin: 1rem 0;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search input#search-input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.8rem;
+}
+
+.search button {
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.suggestions li {
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.weather img {
+  width: 15rem;
+}
+
+.weather h1 {
+  font-size: 7rem;
+}
+
+.weather h2 {
+  font-size: 3.5rem;
+}
+
+.weather .details {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.details .col {
+  display: flex;
+  margin: 2rem 2rem;
+  align-items: center;
+}
+
+.details .col-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.details .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
