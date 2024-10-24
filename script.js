@@ -1,10 +1,10 @@
-const apiKey = "c5aabb9b99dc2bf86560cc9455a5814a";
 const geonamesUsername = "muhammadshoaib";
 const searchBox = document.getElementById("search-input");
 const searchBtn = document.getElementById("searchBtn");
 const weatherIcon = document.getElementById("weatherIcon");
 const suggestionsList = document.getElementById("suggestions");
 
+import { apiKey } from './config.js';
 async function checkWeather(city) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`;
 
